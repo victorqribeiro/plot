@@ -1,7 +1,7 @@
 {
-  "name": " ",
-  "short_name": " ",
-  "description": " ",
+  "name": "Plot",
+  "short_name": "Plot",
+  "description": "Plot equations using canvas",
   "start_url": "index.html",
   "display": "standalone",
   "orientation": "portrait",
