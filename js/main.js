@@ -1,33 +1,33 @@
 const canvas = document.getElementById('canvas');
 canvas.width = w = innerWidth;
 canvas.height = h = innerHeight;
-const c = canvas.getContext('2d');
+const ctx = canvas.getContext('2d');
 const w2 = w>>1, h2 = h>>1;
 
 const plot = y => {
-	c.clearRect(0,0,w,h)
-	c.save()
-	c.translate(w2,h2)
-	c.beginPath()
-	c.moveTo(-w2,0)
-	c.lineTo(w2,0)
-	c.strokeStyle = "gray"
-	c.stroke()
-	c.fillText("x",w2-10,10)
-	c.beginPath()
-	c.moveTo(0,-h2)
-	c.lineTo(0,h2)
-	c.stroke()
-	c.fillText("y",10,-h2+10)
-	c.beginPath()
+	ctx.clearRect(0,0,w,h)
+	ctx.save()
+	ctx.translate(w2,h2)
+	ctx.beginPath()
+	ctx.moveTo(-w2,0)
+	ctx.lineTo(w2,0)
+	ctx.strokeStyle = "gray"
+	ctx.stroke()
+	ctx.fillText("x",w2-10,10)
+	ctx.beginPath()
+	ctx.moveTo(0,-h2)
+	ctx.lineTo(0,h2)
+	ctx.stroke()
+	ctx.fillText("y",10,-h2+10)
+	ctx.beginPath()
 	for(let i = -w2; i < w2; i++)
 		if( i == -w2 )
-			c.moveTo(i,-y(i));
+			ctx.moveTo(i,-y(i));
 		else
-			c.lineTo(i,-y(i));
-	c.strokeStyle = 'black'
-	c.stroke()
-	c.restore()
+			ctx.lineTo(i,-y(i));
+	ctx.strokeStyle = 'black'
+	ctx.stroke()
+	ctx.restore()
 }
 
 const y = x => eval(document.getElementById('x').value)
