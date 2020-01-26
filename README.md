@@ -12,7 +12,7 @@ I've made this a while ago cause I was struggling with a math class and feeling 
 
 ## ToDo
 
-I'm proprably never coming back to this project, since there's so many other great tools out there for this very purpose, but if anyone wants to exercise they programming skills, here's what you can add to this project:
+I'm proprably never coming back to this project, since there's so many other great tools out there for this very purpose, but if anyone wants to exercise their programming skills, here's what you can add to this project:
 * Pan mode  
 * Zoom
 * Plot more than one equation (different colors)
